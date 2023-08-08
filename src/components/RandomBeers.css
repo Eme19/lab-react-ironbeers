@@ -1,0 +1,16 @@
+.btn-random{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    font-size: 1.2rem;
+    background-color:rgb(28, 185, 238);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: transparent;
+}
+
+.random-beer-img{
+    width: auto;
+    height: 1rem;
+    margin-bottom: 2rem;
+}

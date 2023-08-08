@@ -3,6 +3,8 @@ import {  useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { v4 as uuidv4 } from 'uuid';
+import './NewBeer.css'
+import { Input } from 'antd';
 
 function AddnewBeer(){
 
@@ -45,72 +47,94 @@ const handleSubmit = e => {
          <div className="nav-imag">
        <Link to="/"><img className="beer-nav-style" alt="" src="https://user-images.githubusercontent.com/23629340/40707029-cb2fce12-63ef-11e8-939c-f673ff3b965d.png" /></Link>
         </div>
-        <div>
-            <h3>Add New Beer</h3>
+        <div className='form-flex'>
             <form onSubmit={handleSubmit}>
+
+                <div className='inputstyle'>
                 <label>Name</label>
-                <input 
+                <Input className='input-formstyle'
                 type="text"
                 name="name"
                 onChange={e => setName(e.target.value)}
                 value={name}/>
 
+                </div>
+               
 
-              <label>Tagline</label>
-                <input 
+             <div className='inputstyle'>
+             <label>Tagline</label>
+                <Input className='input-formstyle'
                 type="text"
                 name="tagline"
                 onChange={e => setTagline(e.target.value)}
                 value={tagline}/>
 
+             </div>
+             
 
-
-              <label>Description</label>
-                <input 
+              <div className='inputstyle'>
+              <label >Description</label>
+                <Input className='form-input-descr'
                 type="text"
                 name="description"
                 onChange={e => setDescription(e.target.value)}
                 value={description}/>
 
+              </div>
 
+             
 
-              <label>First_brewed</label>
-                <input 
+             <div className='inputstyle'>
+             <label>First_brewed</label>
+                <Input className='input-formstyle'
                 type="text"
                 name="first_brewed"
                 onChange={e => setFirst_brewed(e.target.value)}
                 value={first_brewed}/>
 
+             </div>
 
+              
+
+             <div className='inputstyle'>
              <label>brewers_tips</label>
-                <input 
+                <Input className='input-formstyle'
                 type="text"
                 name="brewers_tips"
                 onChange={e => setBrewers_tips(e.target.value)}
                 value={brewers_tips}/>
 
+             </div>
+             
 
 
 
-              <label>Attenuation_level</label>
-                <input 
+             <div className='inputstyle'>
+             <label>Attenuation_level</label>
+                <Input className='input-formstyle'
                 type="number"
                 name="attenuation_leve"
                 onChange={e => setAttenuation_level(e.target.value)}
                 value={attenuation_leve}/>
 
+             </div>
+             
+
 
                 
-
-              <label>Contributed_by</label>
-                <input 
+             <div className='inputstyle'>
+             <label>Contributed_by</label>
+                <Input className='input-formstyle'
                 type="text"
                 name="contributed_by"
                 onChange={e => setContributed_by(e.target.value)}
                 value={contributed_by}/>
-
-            <button type="submit">Add Beer</button>
-
+             </div>
+             
+            <div>
+            <button className='btn-form' type="submit">ADD NEW</button>
+            </div>
+            
             </form>
         </div>
        </>

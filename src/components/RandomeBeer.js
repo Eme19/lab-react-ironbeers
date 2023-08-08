@@ -39,28 +39,32 @@ const randomBeer = async () => {
 
 
     return(
-        <>
+        
          <div >
             <div className="nav-imag">
             <Link to="/">
             <img className="beer-nav-style"alt="" src="https://user-images.githubusercontent.com/23629340/40707029-cb2fce12-63ef-11e8-939c-f673ff3b965d.png"  />
             </Link>
             </div>
-           
-            <img alt={random.name} src={random.image_url} height={100}/>
+           <div  className="beerDetails">
+            <div  >
+            <img className='random-beer-img' alt={random.name} src={random.image_url} />
+            </div>
             <h5>{random.name}</h5>
             <ul>
-                <li><span>tagline: </span>{random.tagline}</li>
-                <li><span>first_brewed: </span>{random.first_brewed}</li>
-                <li><span>attenuation_level:</span>{random.attenuation_level}</li>
-                <li><span>description:</span>{random.description}</li>
-                <li><span>contributed_by: </span>{random.contributed_by}</li>
+            <li id="liDetail">{random.attenuation_level}</li>
+            <li>{random.first_brewed}</li>
+            <li>{random.tagline}</li>
+            <li>{random.description}</li>
+            <li><span>contributed_by: </span>{random.contributed_by}</li>
                 
             </ul>
-            <button onClick={randomBeer}>Check Randomly</button>
-            
+            <div>
+            <button className='btn-random' onClick={randomBeer}>Select Randomly</button>
+            </div>
+           </div>
         </div>
-        </>
+     
     )
 }
 
