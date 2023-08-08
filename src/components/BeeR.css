@@ -1,0 +1,68 @@
+.beer-imag{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0.2rem;
+}
+
+
+.beer-nav-style{
+    width: 100%;
+    height: 77%;
+}
+
+
+.nav-imag{
+    display: flex;
+    justify-content: center;
+    padding-left: 1.4rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    inline-size: 20rem;
+    color: black;
+    text-transform: capitalize;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+.beer-flex{
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 2rem;
+   width: 100%;
+   gap: 2rem;
+  border-bottom: 1px solid;
+   border-color: rgb(226, 224, 224);
+}
+
+.beers-imge{
+    width: auto;
+    height: 11rem ;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.beer-h2-p {
+  text-align: start;
+  padding-top: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.beer-h2-p p{
+    font-size: 1rem;
+    color: rgb(118, 114, 114);
+}
+
+
+.link-stye{
+    text-decoration: none;
+    color: rgb(88, 85, 85);
+}
+
+span{
+    color: black;
+    margin-inline-end: 0.3rem;
+}
