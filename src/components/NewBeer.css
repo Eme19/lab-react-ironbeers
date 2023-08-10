@@ -1,48 +1,43 @@
-form{
-    display: flex;
-    flex-direction: column;
-   width: 100%;
-   
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-
-.form-input-descr{
- border: 1px solid;
-   padding: 5rem 0rem 5rem 0rem;
-   border-radius: 18px;
+.form-input-descr {
+  border: 1px solid;
+  padding: 5rem 0rem 5rem 0rem;
+  border-radius: 18px;
 }
 
-
-
-label{
-    float: left;
-    padding-bottom: 0.2rem;
-    padding-top: 1rem;
-    padding-left: 0.7rem;
-    font-weight: bold;
+label {
+  float: left;
+  padding-bottom: 0.2rem;
+  padding-top: 1rem;
+  padding-left: 0.7rem;
+  font-weight: bold;
 }
 
-.inputstyle{
-    padding-left: 4rem;
-    margin-right: 4rem;
-    
+.inputstyle {
+  padding-left: 4rem;
+  margin-right: 4rem;
 }
 
-.btn-form{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    padding: 0.6rem 8rem 0.6rem 8rem;
-    font-size: 0.9rem;
-    
-    color: white;
-    background-color:rgb(28, 185, 238);
-    cursor: pointer;
-    border-radius: 0.3rem;
-    border: transparent;
-    border-radius: 18px;
-    text-transform: capitalize;
+.btn-form {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 0.6rem 8rem 0.6rem 8rem;
+  font-size: 0.9rem;
+
+  color: white;
+  background-color: rgb(28, 185, 238);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: transparent;
+  border-radius: 18px;
+  text-transform: capitalize;
 }
 
-.input-formstyle{
-    border-radius: 18px;
+.input-formstyle {
+  border-radius: 18px;
 }
