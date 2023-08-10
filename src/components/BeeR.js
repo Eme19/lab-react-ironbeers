@@ -2,15 +2,28 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import {Link} from 'react-router-dom'
 import SearchBeer from "./SearchBeer"
-import SearchResult from "./SearchResult"
-import { Card, Col, Button} from 'antd';
+
 
 
 function Beer(){
     const [beers, setBeers] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const [results, setResults] = useState(true)
+    
+
+   
+
+    const SearChBeersHandler = e => {
+        const searchResult = [...beers].filter((items)=>{
+            return items.name.toLowerCase().includes(e.target.value.toLowerCase())
+        })
+        setBeers(searchResult)
+        }
+        
+
+
+
+
 
     useEffect(()=>{
         
@@ -33,9 +46,8 @@ function Beer(){
         {loading ? <p>isLoading...</p> :
         <div>
 
-              <SearchResult results={results}/>
-              <SearchBeer  setResults={setResults}/>
-              
+              <SearchBeer SearChBeersHandler={SearChBeersHandler}/>
+    
             
             {beers.map((beer)=> (
                 <div className="beer-flex" key={beer._id}>
